@@ -39,10 +39,10 @@ st.set_page_config(page_title="Image Processing App", layout="wide", page_icon="
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["About Group 6", "Upload & Transform"])
+page = st.sidebar.radio("Go to", ["About", "Upload & Transform"])
 
 if page == "Upload & Transform":
-    st.title("Image Processing App Group 6")
+    st.title("Image Processing App")
 
     # File uploader
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
@@ -80,7 +80,7 @@ if page == "Upload & Transform":
             st.subheader("Transformed Image")
             st.image(transformed_image, caption="Transformed Image", use_column_width=True)
 
-elif page == "About Group 6":
+elif page == "About":
     #pres = Image.open("pres.jpg")
     
     #st.image()
